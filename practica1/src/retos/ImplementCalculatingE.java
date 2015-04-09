@@ -8,7 +8,7 @@ public class ImplementCalculatingE {
 		CalculatingE E1 = new CalculatingE();
 		int ans = 0;
 		while(true){
-			System.out.print("Ingrese la precisión de e: ");
+			System.out.print("Ingredse la precisión de e: ");
 			ans = teclado.nextInt();
 			if(ans==-1) break;
 			System.out.println("e= "+E1.serie(ans));
