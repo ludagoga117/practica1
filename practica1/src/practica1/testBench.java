@@ -2,7 +2,7 @@ package practica1;
 import java.util.Scanner;
 
 public class testBench {
-/*	//Punto1
+	//Punto1
 	public static void main(String[] args) {
 		cubo C1;
 		float arista;
@@ -13,7 +13,7 @@ public class testBench {
 		System.out.println("El volumen del cubo es: "+C1.volumen()+" u^3.");
 		System.out.println("El area del cubo es: "+C1.area()+" u^2.");
 	}
-*//*		//Punto2
+/*		//Punto2
 	public static void main(String[] args) {
 		pitagoras T1;
 		float l1, l2;
@@ -23,7 +23,7 @@ public class testBench {
 		System.out.print("Ingrese la longitud del cateto 2: ");
 		l2 = teclado.nextFloat();
 		T1 = new pitagoras(l1,l2);
-		System.out.println("La hipotenusa del triángulo es: "+T1.hipotenusa()+" u");
+		System.out.println("La hipotenusa del triï¿½ngulo es: "+T1.hipotenusa()+" u");
 	}
 *//*
 	//Punto3
@@ -31,11 +31,11 @@ public class testBench {
 		equilatero E1;
 		float lado;
 		Scanner teclado = new Scanner(System.in);
-		System.out.print("Ingrese la longitud del lado del triángulo equilátero: ");;
+		System.out.print("Ingrese la longitud del lado del triï¿½ngulo equilï¿½tero: ");;
 		lado = teclado.nextFloat();
 		E1 = new equilatero(lado);
-		System.out.println("El perímetro del triángulo es: "+E1.perimetro()+" u.");
-		System.out.println("El area del triángulo es: "+E1.area()+" u^2.");
+		System.out.println("El perï¿½metro del triï¿½ngulo es: "+E1.perimetro()+" u.");
+		System.out.println("El area del triï¿½ngulo es: "+E1.area()+" u^2.");
 	}
 *//*
 	//Punto4
@@ -49,7 +49,7 @@ public class testBench {
 		asignatura = teclado.next();
 		System.out.print("Ingrese el nombre del estudiante: ");
 		nombre = teclado.next();
-		System.out.print("Ingrese el número de identificación ");
+		System.out.print("Ingrese el nï¿½mero de identificaciï¿½n ");
 		ID = teclado.next();
 		System.out.print("Ingrese la nota de seguimiento que obtuvo " + nombre +": ");
 		seguimiento = teclado.nextFloat();
@@ -69,7 +69,7 @@ public class testBench {
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("Ingrese el nombre del estudiante: ");
 		nombre = teclado.next();
-		System.out.print("Ingrese el número de identificación ");
+		System.out.print("Ingrese el nï¿½mero de identificaciï¿½n ");
 		ID = teclado.next();
 		M1 = new nota_DM(nombre, ID);
 		
@@ -90,7 +90,7 @@ public class testBench {
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("Ingrese el nombre del estudiante: ");
 		nombre = teclado.next();
-		System.out.print("Ingrese el número de identificación ");
+		System.out.print("Ingrese el nï¿½mero de identificaciï¿½n ");
 		ID = teclado.next();
 		M1 = new nota_DM(nombre, ID);
 		
@@ -104,10 +104,10 @@ public class testBench {
 		
 		switch(M1.mensaje(M1.notaFinal())){
 			case 1:
-				System.out.print("El estudiante "+M1.getNombre()+" está en el lugar equivocado.");
+				System.out.print("El estudiante "+M1.getNombre()+" estï¿½ en el lugar equivocado.");
 				break;
 			case 2:
-				System.out.print("El estudiante "+M1.getNombre()+" está re-mal.");
+				System.out.print("El estudiante "+M1.getNombre()+" estï¿½ re-mal.");
 				break;
 			case 3:
 				System.out.print("El estudiante "+M1.getNombre()+" puede recuperarse.");
@@ -116,7 +116,7 @@ public class testBench {
 				System.out.print("El estudiante "+M1.getNombre()+" es normalito.");
 				break;
 			case 5:
-				System.out.print("El estudiante "+M1.getNombre()+" está muy bien");
+				System.out.print("El estudiante "+M1.getNombre()+" estï¿½ muy bien");
 				break;
 			case 6:
 				System.out.print("El estudiante "+M1.getNombre()+" es excelente");
@@ -131,7 +131,7 @@ public class testBench {
 		int n;
 		productos P1 = new productos();
 		Scanner teclado = new Scanner(System.in);
-		System.out.print("Ingrese el número del producto (1-4): ");
+		System.out.print("Ingrese el nï¿½mero del producto (1-4): ");
 		n = teclado.nextInt();
 		System.out.println("El precio del producto "+n+" es: "+P1.getPrecio1(n)+" (array).");
 		System.out.println("El precio del producto "+n+" es: "+P1.getPrecio2(n)+" (switch).");
@@ -143,7 +143,7 @@ public class testBench {
 		int opcion, n;
 		estadisticasConductor stats = new estadisticasConductor();
 		while(true){
-			System.out.print("Menú inicial de estadísticas\n1. Salir\n2. Añadir nuevo conductor\n3. Ver conductor\n4. Ver estadísticas\n ---> Opción: ");
+			System.out.print("Menï¿½ inicial de estadï¿½sticas\n1. Salir\n2. Aï¿½adir nuevo conductor\n3. Ver conductor\n4. Ver estadï¿½sticas\n ---> Opciï¿½n: ");
 			opcion = teclado.nextInt();
 			System.out.print("\n");
 			switch (opcion){
@@ -161,7 +161,7 @@ public class testBench {
 					break;
 				case 3:
 					if(stats.numConduct()!=0){
-						System.out.print("Ingrese el número de conductor que quiere ver (1-"+stats.numConduct()+"): ");
+						System.out.print("Ingrese el nï¿½mero de conductor que quiere ver (1-"+stats.numConduct()+"): ");
 						n = teclado.nextInt();
 						n--;
 						if((n<=stats.numConduct()-1)&&(n>=0)){
@@ -171,14 +171,14 @@ public class testBench {
 							}else if(stats.getSexo(n)==2){
 								System.out.print("masculino");
 							}
-							System.out.print(", tiene "+stats.getAge(n)+" años, y su vehículo está registrado en ");
+							System.out.print(", tiene "+stats.getAge(n)+" aï¿½os, y su vehï¿½culo estï¿½ registrado en ");
 							if(stats.getRegistro(n)==1){
-								System.out.print("Medellín.\n");
+								System.out.print("Medellï¿½n.\n");
 							}else if(stats.getRegistro(n)==2){
-								System.out.print("otro municipio distinto a Medellín.\n");
+								System.out.print("otro municipio distinto a Medellï¿½n.\n");
 							}
 						}else{
-							System.out.print("Error: número inválido\n");
+							System.out.print("Error: nï¿½mero invï¿½lido\n");
 						}
 					}else{
 						System.out.println("No hay conductores en la base de datos.");
@@ -186,12 +186,12 @@ public class testBench {
 					break;
 				case 4:
 					System.out.println("Actualmente hay "+stats.numConduct()+" conductores registrados.");
-					System.out.println("El "+stats.porcentajeEdadMenorQueN(25)+"% de los conductores tiene menos de 25 años.");
+					System.out.println("El "+stats.porcentajeEdadMenorQueN(25)+"% de los conductores tiene menos de 25 aï¿½os.");
 					System.out.println("El "+stats.porcentajeFemenino()+"% de los conductores son mujeres.");
-					System.out.println("El "+stats.porcentajeOutMedellin()+"% de los conductores vive fuera de Medellín");
+					System.out.println("El "+stats.porcentajeOutMedellin()+"% de los conductores vive fuera de Medellï¿½n");
 					break;
 				default:
-					System.out.print("Opción inválida");
+					System.out.print("Opciï¿½n invï¿½lida");
 					break;
 			}
 			System.out.print("\n");
@@ -205,37 +205,37 @@ public class testBench {
 		punto8 calculos = new punto8();
 		int num1 = 0, num2 = 0, opcion = 0;
 		if( args.length==0){
-			System.out.print("Ingrese el primer número de dos cifras: ");
+			System.out.print("Ingrese el primer nï¿½mero de dos cifras: ");
 			num1 = teclado.nextInt();
-			System.out.print("Ingrese el segundo número de dos cifras: ");
+			System.out.print("Ingrese el segundo nï¿½mero de dos cifras: ");
 			num2 = teclado.nextInt();
 		}else if( args.length>2){
 			System.out.println("Error: Demasiados argumentos.");
 		}else{
-			num1 = Integer.parseInt(args[0]);	//Para convertir un String (cadena) a int (entero) hay que emplear el método estático de la clase Integer, parseInt
+			num1 = Integer.parseInt(args[0]);	//Para convertir un String (cadena) a int (entero) hay que emplear el mï¿½todo estï¿½tico de la clase Integer, parseInt
 			num2 = Integer.parseInt(args[1]);
 		}
 		if( args.length<=2){
 			opcion = calculos.getOpcion(num1);
 			switch ( opcion ){
 				case 0: // CUal es mayor
-					if(calculos.iguales(num1, num2)!=0) System.out.println("El número mayor es: "+calculos.getMayor(num1,num2));
-					else System.out.println("Los números son iguales. No hay uno mayor que otro.");
+					if(calculos.iguales(num1, num2)!=0) System.out.println("El nï¿½mero mayor es: "+calculos.getMayor(num1,num2));
+					else System.out.println("Los nï¿½meros son iguales. No hay uno mayor que otro.");
 					break;
 				case 1: // Cual es menor
-					if(calculos.iguales(num1,num2)!=0) System.out.println("El número menor es: "+calculos.getMenor(num1,num2));
-					else System.out.println("Los números son iguales. No hay uno menor que otro.");
+					if(calculos.iguales(num1,num2)!=0) System.out.println("El nï¿½mero menor es: "+calculos.getMenor(num1,num2));
+					else System.out.println("Los nï¿½meros son iguales. No hay uno menor que otro.");
 					break;
 				case 2: // Calcule suma
-					System.out.println("La suma de los dos números es: "+calculos.getSuma(num1,num2));
+					System.out.println("La suma de los dos nï¿½meros es: "+calculos.getSuma(num1,num2));
 					break;
 				case 3: // Calcule resta
-					System.out.println("La resta de los dos números es: "+calculos.getResta(num1,num2));
+					System.out.println("La resta de los dos nï¿½meros es: "+calculos.getResta(num1,num2));
 					break;
-				case 4: // Calcule multiplicación
-					System.out.println("La multiplicación de los dos números es: "+calculos.getMultiplicacion(num1,num2));
+				case 4: // Calcule multiplicaciï¿½n
+					System.out.println("La multiplicaciï¿½n de los dos nï¿½meros es: "+calculos.getMultiplicacion(num1,num2));
 					break;
-				case 5: // División
+				case 5: // Divisiï¿½n
 					System.out.println(num1+"/"+num2+"="+calculos.getDivision(num1,num2));
 					System.out.println(num2+"/"+num1+"="+calculos.getDivision(num2,num1));
 					break;
@@ -247,11 +247,11 @@ public class testBench {
 					if(calculos.modulo(num2,num1)==0) System.out.println(num2+" es divisible entre "+num1);
 					else System.out.println(num2+" NO es divisible entre "+num1);
 					break;
-				case 8: // Raiz cuadrada del primer número
-					System.out.println("La raíz cuadrada del primer número es: "+calculos.getRaiz(num1));
+				case 8: // Raiz cuadrada del primer nï¿½mero
+					System.out.println("La raï¿½z cuadrada del primer nï¿½mero es: "+calculos.getRaiz(num1));
 					break;
-				case 9: // Qué punto tan fácil
-					System.out.println("Qué punto tan fácil.");
+				case 9: // Quï¿½ punto tan fï¿½cil
+					System.out.println("Quï¿½ punto tan fï¿½cil.");
 					break;
 			}
 		}
@@ -267,17 +267,17 @@ public class testBench {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		punto10 fibonacci = new punto10();
-		System.out.print("Ingrese el número a analizar: ");
+		System.out.print("Ingrese el nï¿½mero a analizar: ");
 		int numero = teclado.nextInt();
-		if(fibonacci.determinar(numero)==1)	System.out.println("El número "+numero+" pertenece a la serie fibonacci.");
-		else System.out.println("El número "+numero+" NO pertenece a la serie fibonacci.");
+		if(fibonacci.determinar(numero)==1)	System.out.println("El nï¿½mero "+numero+" pertenece a la serie fibonacci.");
+		else System.out.println("El nï¿½mero "+numero+" NO pertenece a la serie fibonacci.");
 	}
 *//*
 	//Punto11
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		punto11 factorial = new punto11();
-		System.out.print("Ingrese el número a analizar: ");
+		System.out.print("Ingrese el nï¿½mero a analizar: ");
 		int numero = teclado.nextInt();
 		for( int i= 0; i<= numero; i++){
 			System.out.println(i+"! = "+factorial.calcularFactorial(i));
@@ -288,11 +288,11 @@ public class testBench {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		punto12 cursoAle = new punto12();
-		System.out.print("Ingrese el número de estudiantes: ");
+		System.out.print("Ingrese el nï¿½mero de estudiantes: ");
 		int n = teclado.nextInt();
 		cursoAle.newDataBase(n);
 		for( int i= 0; i<n; i=i+2){
-			System.out.println("La nota final del estudiante de código "+cursoAle.getCodigo(i)+" fue: "+cursoAle.getFinal(i));
+			System.out.println("La nota final del estudiante de cï¿½digo "+cursoAle.getCodigo(i)+" fue: "+cursoAle.getFinal(i));
 		}
 		System.out.println("El promedio de las definitivas fue: "+cursoAle.promDefinitiva(n));
 		System.out.println("El porcentaje de gente que perdio fue: "+cursoAle.porcentajeBrutos(n));
@@ -302,7 +302,7 @@ public class testBench {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		punto13 fibonacci = new punto13();
-		System.out.print("Ingrese el número de términos de la serie que quiere ver: ");
+		System.out.print("Ingrese el nï¿½mero de tï¿½rminos de la serie que quiere ver: ");
 		int n = teclado.nextInt();
 		for( int i = 1; i<=n; i++ ){
 			System.out.println(fibonacci.getTerm(i));
@@ -317,20 +317,20 @@ public class testBench {
 		double valor = 0;
 		int opcion = 0;
 		while(true){
-			System.out.print("Menú inicial de áreas\n1. Salir\n2. Calcular área de círculo\n3. Calculas área de triángulo\n4. Calcular área de cuadrado\n5. Calcular área de rectángulo\n ---> Opción: ");
+			System.out.print("Menï¿½ inicial de ï¿½reas\n1. Salir\n2. Calcular ï¿½rea de cï¿½rculo\n3. Calculas ï¿½rea de triï¿½ngulo\n4. Calcular ï¿½rea de cuadrado\n5. Calcular ï¿½rea de rectï¿½ngulo\n ---> Opciï¿½n: ");
 			opcion = teclado.nextInt();
 			switch(opcion){
 				case 1:
 					System.out.print("Suerte!");
 					break;
 				case 2:
-					System.out.print("Ingrese la longitud del radio del círculo: ");
+					System.out.print("Ingrese la longitud del radio del cï¿½rculo: ");
 					valor = teclado.nextDouble();
 					areas.setElemento(0, valor);
 					break;
 				case 3:
 					for( int i= 1; i<=3; i++){
-						System.out.print("Ingrese la longitud del lado "+i+" del triángulo: ");
+						System.out.print("Ingrese la longitud del lado "+i+" del triï¿½ngulo: ");
 						valor = teclado.nextDouble();
 						areas.setElemento(i-1,valor);
 					}
@@ -342,18 +342,18 @@ public class testBench {
 					break;
 				case 5:
 					for( int i= 1; i<=2; i++){
-						if(i==1) System.out.print("Ingrese la longitud de la base del rectángulo: ");
-						else System.out.print("Ingrese la longitud de la altura del rectángulo: ");
+						if(i==1) System.out.print("Ingrese la longitud de la base del rectï¿½ngulo: ");
+						else System.out.print("Ingrese la longitud de la altura del rectï¿½ngulo: ");
 						valor = teclado.nextDouble();
 						areas.setElemento(i-1,valor);
 					}
 					break;
 				default:
-					System.out.print("Error: Opción inválida.\n");
+					System.out.print("Error: Opciï¿½n invï¿½lida.\n");
 					break;
 			}
 			if( opcion == 1) break;
-			else if((opcion>=2)&&(opcion<=5)) System.out.println("El área pedida es: "+areas.getArea(opcion-2)+"u^2");
+			else if((opcion>=2)&&(opcion<=5)) System.out.println("El ï¿½rea pedida es: "+areas.getArea(opcion-2)+"u^2");
 		}
 	}
 *//*
@@ -366,7 +366,7 @@ public class testBench {
 		long plata = 0;
 		int opcion, opcionAct = 0;
 		while(true){
-			System.out.print("Menú del banco virtual\n1. Salir\n2. Consignar plata\n3. Retirar plata\n4. Consultar saldo\n5. Actualizar datos\n ---> Opción: ");
+			System.out.print("Menï¿½ del banco virtual\n1. Salir\n2. Consignar plata\n3. Retirar plata\n4. Consultar saldo\n5. Actualizar datos\n ---> Opciï¿½n: ");
 			opcion = teclado.nextInt();
 			switch(opcion){
 				case 1:
@@ -376,26 +376,26 @@ public class testBench {
 					System.out.print("Ingrese la cantidad de plata a consignar: ");
 					plata = teclado.nextLong();
 					David.consignacion(plata);
-					System.out.println("Consignación exitosa: Se consignaron "+plata+" pesos en la cuenta del Señor(a) "+David.getNombre());
+					System.out.println("Consignaciï¿½n exitosa: Se consignaron "+plata+" pesos en la cuenta del Seï¿½or(a) "+David.getNombre());
 					break;
 				case 3:
 					System.out.print("Ingrese la plata a retirar: ");
 					plata = teclado.nextLong();
-					System.out.println("Del cajero salió: "+David.retiro(plata)+" pesos. Quedó: "+David.consultar_saldo()+" pesos");
+					System.out.println("Del cajero saliï¿½: "+David.retiro(plata)+" pesos. Quedï¿½: "+David.consultar_saldo()+" pesos");
 					break;
 				case 4:
-					System.out.println("Saldo actual de la cuenta del señor(a) "+David.getNombre()+": "+ David.consultar_saldo()+" pesos");
+					System.out.println("Saldo actual de la cuenta del seï¿½or(a) "+David.getNombre()+": "+ David.consultar_saldo()+" pesos");
 					break;
 				case 5:
 					break;
 				default:
-					System.out.print("Error: Opción inválida.\n");
+					System.out.print("Error: Opciï¿½n invï¿½lida.\n");
 					break;
 			}
 			if( opcion == 1) break;
 			else if(opcion == 5){
 				while(true){
-					System.out.print("Submenú de actualización de datos. Información a actualizar: \n1. Nada (salir)\n2. Nombre\n3. Apellido\n4. Fecha de nacimiento\n5. Cédula\n6. Dirección\n7. Teléfono\n ---> Opción: ");
+					System.out.print("Submenï¿½ de actualizaciï¿½n de datos. Informaciï¿½n a actualizar: \n1. Nada (salir)\n2. Nombre\n3. Apellido\n4. Fecha de nacimiento\n5. Cï¿½dula\n6. Direcciï¿½n\n7. Telï¿½fono\n ---> Opciï¿½n: ");
 					opcionAct = teclado.nextInt();
 					switch(opcionAct){
 						case 1:
@@ -420,7 +420,7 @@ public class testBench {
 							David.pedirTelefono();
 							break;
 						default:
-							System.out.print("Error: Opción inválida.\n");
+							System.out.print("Error: Opciï¿½n invï¿½lida.\n");
 							break;
 					}
 					if( opcionAct == 1) break;
@@ -438,26 +438,26 @@ public class testBench {
 		Scanner teclado = new Scanner(System.in);
 		Disco D1 = new Disco();
 		Libro L1 = new Libro();
-		System.out.print("Ingrese título del disco: ");
+		System.out.print("Ingrese tï¿½tulo del disco: ");
 		String ans = teclado.nextLine();
 		D1.setTitulo(ans);
 		System.out.print("Ingrese el precio del disco: ");
 		ans = teclado.nextLine();
 		D1.setPrecio((long)Integer.parseInt(ans));
-		System.out.print("Ingrese la duración en minutos: ");
+		System.out.print("Ingrese la duraciï¿½n en minutos: ");
 		ans = teclado.nextLine();
 		D1.setDurMin(Integer.parseInt(ans));
 		System.out.println();
-		System.out.print("Ingrese el título del libro: ");
+		System.out.print("Ingrese el tï¿½tulo del libro: ");
 		ans = teclado.nextLine();
 		L1.setTitulo(ans);
 		System.out.print("Ingrese el precio del libro: ");
 		ans = teclado.nextLine();
 		L1.setPrecio(Integer.parseInt(ans));
-		System.out.print("Ingrese el número de páginas del libro: ");
+		System.out.print("Ingrese el nï¿½mero de pï¿½ginas del libro: ");
 		ans = teclado.nextLine();
 		L1.setNumPag((long)Integer.parseInt(ans));
-		System.out.print("Ingrese el año de publicación del libro: ");
+		System.out.print("Ingrese el aï¿½o de publicaciï¿½n del libro: ");
 		ans = teclado.nextLine();
 		L1.setAnoPublica(Integer.parseInt(ans));
 		System.out.println();
@@ -471,14 +471,14 @@ public class testBench {
 		Ventas bobada = new Ventas();
 		String ans, ans2;
 		while(true){
-			System.out.print("Quiere añadir una venta?[Y/N]: ");
+			System.out.print("Quiere aï¿½adir una venta?[Y/N]: ");
 			ans = teclado.nextLine();
 			if(ans.equals("N")||ans.equals("n")){
 				break;
 			}else if(ans.equals("Y")||ans.equals("y")){
-				System.out.print("Ingrese el título de la publicación: ");
+				System.out.print("Ingrese el tï¿½tulo de la publicaciï¿½n: ");
 				ans = teclado.nextLine();
-				System.out.print("Ingrese el precio de la publicación: ");
+				System.out.print("Ingrese el precio de la publicaciï¿½n: ");
 				ans2 = teclado.nextLine();
 				bobada.addVenta(ans, (long)Integer.parseInt(ans2));
 			}
@@ -489,7 +489,7 @@ public class testBench {
 			if(ans.equals("N")||ans.equals("n")){
 				break;
 			}else if(ans.equals("Y")||ans.equals("y")){
-				System.out.print("Ingrese el título de la publicación: ");
+				System.out.print("Ingrese el tï¿½tulo de la publicaciï¿½n: ");
 				ans = teclado.nextLine();
 				bobada.mostrar(ans);
 			}
@@ -508,13 +508,13 @@ public class testBench {
 		System.out.print("Ingrese el segundo apellido de "+ans1+" "+ans2+": ");
 		String ans3 = teclado.nextLine();
 		Address.Nuevo_nombre(ans1, ans2, ans3);
-		System.out.print("Ingrese la dirección: ");
+		System.out.print("Ingrese la direcciï¿½n: ");
 		ans1 = teclado.nextLine();
 		System.out.print("Ingrese la ciudad: ");
 		ans2 = teclado.nextLine();
 		System.out.print("Ingrese la provincia: ");
 		ans3 = teclado.nextLine();
-		System.out.print("Ingrese el código postal: ");
+		System.out.print("Ingrese el cï¿½digo postal: ");
 		String ans4 = teclado.nextLine();
 		Address.Nueva_direccion(ans1, ans2, ans3, ans4);
 		Address.Mostrar();
